@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startNoteFragment">
+
+    <fragment
+        android:id="@+id/startNoteFragment"
+        android:name="com.example.notes.ui.start.StartNoteFragment"
+        android:label="fragment_start_note"
+        tools:layout="@layout/fragment_start_note" >
+        <action
+            android:id="@+id/action_startNoteFragment_to_detailNoteFragment"
+            app:destination="@id/detailNoteFragment" />
+        <action
+            android:id="@+id/action_startNoteFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.notes.ui.add.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_startNoteFragment"
+            app:destination="@id/startNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailNoteFragment"
+        android:name="com.example.notes.ui.detail.DetailNoteFragment"
+        android:label="fragment_detail_note"
+        tools:layout="@layout/fragment_detail_note" >
+        <action
+            android:id="@+id/action_detailNoteFragment_to_startNoteFragment"
+            app:destination="@id/startNoteFragment" />
+    </fragment>
+</navigation>

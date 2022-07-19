@@ -2,4 +2,12 @@
     <string name="app_name">Notes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_note">Title note</string>
+    <string name="back">Назад</string>
+    <string name="add">Добавить</string>
+    <string name="description">Текст заметки</string>
+    <string name="add_title">Название заметки</string>
+    <string name="name_title">Добавление заметки</string>
+    <string name="delete">Удалить</string>
+    <string name="todo">TODO</string>
 </resources>
