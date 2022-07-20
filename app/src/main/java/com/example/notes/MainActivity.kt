@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             delay(3000)
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(mBinding.root)
+            APP = this@MainActivity
             navController = Navigation.findNavController(this@MainActivity,R.id.navFragment)
 
         }
