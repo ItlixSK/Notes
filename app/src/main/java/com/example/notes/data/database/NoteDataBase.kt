@@ -15,6 +15,7 @@ abstract class NoteDataBase: RoomDatabase() {
     companion object{
 
         private var database: NoteDataBase? = null
+
         @Synchronized
         fun getInstance(context: Context): NoteDataBase{
             return if (database == null){
